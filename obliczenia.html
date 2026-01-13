@@ -7,7 +7,7 @@
 <script language="JavaScript">
 
 function dodawanie() {
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.Form.a.value);
 var skl2=parseFloat(document.Form.b.value);
 var wynik = skl1+skl2;
@@ -18,15 +18,15 @@ alert(wynik);
 <form name="Form">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
-<input type="Button" value="Oblicz sumê" onclick="dodawanie()">
+<input type="Button" value="Oblicz sumÃª" onclick="dodawanie()">
 </form>
 <hr>
 
 <script language="JavaScript">
 function odejmowanie() {
-/* Odwo³anie do formularza i jego elementów przez indeks
-Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie wiêc ma indeks równy 1
-Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza wiêc ma indeks równy 0
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez indeks
+Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie wiÃªc ma indeks rÃ³wny 1
+Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza wiÃªc ma indeks rÃ³wny 0
 */
 var skl1=parseFloat(document.forms[1].elements[0].value);
 var skl2=parseFloat(document.forms[1].elements[1].value);
@@ -39,11 +39,11 @@ alert(wynik);
 <form name="jakas_wymyslona_nazwa1">
 a=<input type="Text" name="jakas_wymyslona_nazwa2"><br>
 b=<input type="Text" name="jakas_wymyslona_nazwa3"><br>
-<input type="Button" value="Oblicz ró¿nicê" onclick="odejmowanie()">
+<input type="Button" value="Oblicz rÃ³Â¿nicÃª" onclick="odejmowanie()">
 </form>
 <script language="Javascript">
-function mno¿enie(){
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+function mnoÂ¿enie(){
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.forms[2].elements[0].value);
 var skl2=parseFloat(document.forms[2].elements[1].value);
 var wynik = skl1*skl2;
@@ -54,20 +54,20 @@ alert(wynik);
 <form name="mnozenie">
 c=<input type="Text" name="c"><br>
 d=<input type="Text" name="d"><br>
-<input type="Button" value="Oblicz iloczyn" onclick="mno¿enie()">
+<input type="Button" value="Oblicz iloczyn" onclick="mnoÂ¿enie()">
 </form>
 <hr>
 <script language="Javascript">
 function dzielenie(){
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.forms[3].elements[0].value);
 var skl2=parseFloat(document.forms[3].elements[1].value);
 var wynik = skl1/skl2;
 
-if (wynik<18.5) alert(wynik  "niedowaga")
-else if (wynik>18.4 && wynik<25) alert (wynik "norma")
-else if (wynik>24.9 && wynik<30) alert (wynik && "nadwaga")
-else if (wynik>29.9) alert (wynik "oty³o¶æ")
+if (wynik<18.5) alert("niedowaga")
+else if (wynik>18.4 && wynik<25) alert ("norma")
+else if (wynik>24.9 && wynik<30) alert ("nadwaga")
+else if (wynik>29.9) alert ("otyÂ³oÂ¶Ã¦")
 }
 </script>
 <br><br>
@@ -78,7 +78,7 @@ dzielnik=<input type="Text" name="dzielnik"><br>
 </form>
 <script language="Javascript">
 function BMI(){
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.forms[4].elements[0].value);
 var skl2=parseFloat(document.forms[4].elements[1].value);
 var wynik = skl1/(skl2*skl2);
@@ -95,16 +95,16 @@ wzrost w m=<input type="Text" name="dzielnik"><br>
 <Form>
 Podaj imie: <input type="text" name="imie">
 <br>
-Podaj has³o: <input type="password" name="haslo">
+Podaj hasÂ³o: <input type="password" name="haslo">
 <br>
 Podaj ulubione potrawy:<br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>kotlet schabowy<br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>pierogi<br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>uszka<br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦" checked>kotlet schabowy<br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦" checked>pierogi<br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦" checked>uszka<br>
 Wybierz kolor:<br>
-<input type="radio" name="kolory" value="warto¶æ" checked>zielony<br>
-<input type="radio" name="kolory" value="warto¶æ" checked>niebieski<br>
-<input type="radio" name="kolory" value="warto¶æ" checked>¿ó³ty<br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦" checked>zielony<br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦" checked>niebieski<br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦" checked>Â¿Ã³Â³ty<br>
 Wybierz przedmiot:
 <select name="Przedmioty"</select>
 	<option>matma</option>
@@ -114,3 +114,4 @@ Wybierz przedmiot:
 </form>
 </body>
 </html>
+
